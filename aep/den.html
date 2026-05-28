@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denucia</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div class="drawer">
+                    <input id="my-drawer-1" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+
+                        <label for="my-drawer-1">  
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+      </div>
+    </label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-base-200 min-h-full w-80 p-4">
+                            <li><a href="ini.html">inicio</a></li>
+                            <li><a href="loguin.html">sair</a></li>
+                            <li><a href="den.html"> denuncia </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-center">
+        </div>
+        <div class="navbar-end flex items-center gap-4">
+
+            <button class="btn btn-ghost btn-circle">
+      <div class="indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
+        <span class="badge badge-xs badge-primary indicator-item"></span>
+      </div>
+    </button>
+
+            <div class="avatar">
+                <div class="ring-primary ring-offset-base-100 w-8 rounded-full ring-2 ring-offset-2">
+                    <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Denúncia</h2>
+                <textarea id="des" class="textarea textarea-bordered w-full" placeholder="Descrição da denúncia"></textarea>
+                <input id="lo" type="text" placeholder="Localização" class="input input-bordered w-full" />
+                <input id="data" type="date" class="input input-bordered w-full" />
+                <input id="foto" type="file" class="file-input file-input-bordered w-full" />
+                <div class="card-actions justify-end mt-4">
+                    <button class="btn btn-primary" id="voo" onclick="add()">
+                    Enviar
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="de.js"></script>
+</body>
+
+</html>
