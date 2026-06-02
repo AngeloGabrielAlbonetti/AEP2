@@ -1,11 +1,12 @@
-const de = JSON.parse(
-    localStorage.getItem("de")
-);
-
+const ov = new fi();
 
 function linda() {
-    if (de) {
-        document.body.innerHTML = `
+    const mina = ov.fre();
+    
+    if (mina.length > 0) {
+       let his=""
+       
+        document.body.innerHTML += `
 
 <div class="flex flex-col items-center justify-center min-h-screen bg-base-200">
     <div class="card bg-base-100 w-96 shadow-2xl">

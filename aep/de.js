@@ -1,4 +1,6 @@
-    function add() {
+   const f = new fi();
+   
+   function add() {
         const des = document.getElementById("des").value;
         const lo = document.getElementById("lo").value;
         const data = document.getElementById("data").value;
@@ -8,7 +10,6 @@
 
             alert("Prenche direito");
         } else {
-
             console.log(des, lo, data, foto);
 
             document.body.innerHTML = `
@@ -58,9 +59,5 @@
                 foto: foto.name
             };
 
-            localStorage.setItem(
-                "de", JSON.stringify(de));
-        }
-
-
+            fi.adicao(den);
     }
