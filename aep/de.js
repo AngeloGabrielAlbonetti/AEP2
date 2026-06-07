@@ -59,6 +59,6 @@
                 foto: foto.name
             };
 
-            fi.adicao(den);
+            f.adicao(de);
     }
 }
